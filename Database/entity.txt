@@ -1,0 +1,29 @@
+vet
+-vet-id
+-contact no
+-qualification
+
+pet
+-breed
+-name 
+-type
+-age
+
+prescription
+-report
+-quantity
+-vet-id
+
+owner
+-Address
+-contact no
+-owner name
+-Email
+-pets
+
+
+visit
+-visit-date
+-checkup
+-type
+-visit-id
