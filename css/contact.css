@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family:serif 'Times New Roman', Times, serif;
+    
 }
 .head{
   position: relative;
@@ -34,4 +35,119 @@ nav ul li a {
 }
 nav ul li a:hover{
     color: gold;
+}
+.contact{
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    padding: 50px 100px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url(/image/build.jfif);
+    background-size: cover;
+   
+    
+}
+.contact .cont{
+    max-width: 800px;
+    text-align: center;
+
+}
+.contact .cont h3{
+    font-size: 36px;
+    font-weight: 500;
+    color: gray;
+}
+.contact .cont p{
+    font-weight: 400;
+    
+}
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.container .contactinfo{
+width: 50%;
+display:flex;
+flex-direction: column;
+}
+.container .contactinfo .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+.container .contactinfo .box .icon{
+    min-width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    background-color: gray;
+    border-radius: 50%;
+    font-size: 22px;
+    align-items: center;
+
+}
+.container .contactinfo .box .text{
+    display: flex;
+    margin-left:20px ;
+    font-size: 16px;
+    color: rgb(236, 236, 89);
+    flex-direction: column;
+}
+.container .contactinfo .box .text h2{
+    color: gold;
+    font-weight: 500;
+}
+.contact-form{
+    width: 40%;
+    padding: 40px;
+    background:lightslategray;
+    
+
+}
+.contact-form h2{
+    font-size: 30px;
+    color: black;
+    font-weight: 500;
+
+}
+.contact-form .formbox{
+   position: relative;
+   width: 100%; 
+   margin-top: 10px;
+}
+.contact-form .formbox input,
+.contact-form .formbox textarea
+{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+    resize: none;
+}
+.contact-form .formbox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: gray;
+}
+.contact-form .formbox input:focus ~ span,
+.contact-form .formbox input:valid ~ span,
+.contact-form .formbox textarea:focus ~ span,
+.contact-form .formbox textarea:valid ~ span
+{
+    color: yellow;
+    font-size: 12px;
+    transform: translateY(-20px);
 }
