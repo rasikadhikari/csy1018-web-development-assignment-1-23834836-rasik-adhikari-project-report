@@ -35,3 +35,17 @@ nav ul li a {
 nav ul li a:hover{
     color: gold;
 }
+.colum1, .colum2, .colum3{
+    width: 280px;
+    float: left;
+    margin: 10px;
+}
+.colum1{
+    background-color: bisque;
+}
+.colum2{
+    background-color:darkgrey ;
+}
+.colum3{
+    background-color: dimgray;
+}
