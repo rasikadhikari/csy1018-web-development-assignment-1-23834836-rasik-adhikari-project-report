@@ -12,28 +12,96 @@
 }
 nav{
     display: flex;
-    width: 84%;
-    margin: auto;
+    width: 100%;
+    margin:0;
     padding: 20px;
     align-items: center;
     justify-content: space-between;
     font-size: 20px;
+    background-color: lightblue;
+   
+    
 }
+ 
 
 nav ul li {
     display: inline-block;
     list-style: none;
     margin: 10px 20px;
+   
 }
 nav ul li a {
     text-decoration: none;
-    color: black;
+    color: white;
     font-weight: bold;
+    text-transform:uppercase;
 
 
 }
 nav ul li a:hover{
     color: gold;
+   
+    
+}
+a.active,a:hover{
+    background-color: rgb(123, 159, 171);
+    transition: .5s;
+}
+.checkbtn{
+    font-size: 30px;
+    color:white;
+    float:right;
+    line-height: 80px;
+    margin-left:10px;
+   
+    cursor: pointer;
+    display:none;
+}
+#check{
+    display: none;
+}
+@media(max-width: 952px){
+    label.logo{
+        border-image-width: auto;
+        padding-left: 50px;
+    }
+    nav ul li a {
+        font-size: 16px;
+    }
+    @media(max-width:858px) {
+        .checkbtn{
+            display:block;
+        }
+        ul{
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            background: gray;
+            top: 80px;
+            left:-100%;
+            text-align:center;
+            transition: .5s;
+        } 
+        nav ul li{
+            display: block;
+            margin: 50px 0;
+            line-height: 30px;
+        }  
+        nav ul li a{
+            font-size: 20px;
+        }
+        a.active,a:hover{
+            background: none;
+            color: gold;
+        }
+        #check:checked~ul{
+            left: 0;
+        }
+        
+    }
+
+
+
 }
 .detel{
     margin-left: 8%;
