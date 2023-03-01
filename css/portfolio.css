@@ -61,6 +61,20 @@ a.active,a:hover{
     nav ul li a {
         font-size: 16px;
     }
+    .gallery{
+        grid-template-areas: 
+    'car car car-2 car-2'
+    'car car car-3 car-3'
+    'car-4 car-4 car-5 car-5'
+    'car-6 car-6 car-7 car-7';
+    }
+    .gallery a{
+        height: 20rem;
+    }
+    .car{
+        min-height: 41rem;
+    }
+
    
     
     
@@ -93,6 +107,24 @@ a.active,a:hover{
         #check:checked~ul{
             left: 0;
         }
+        .gallery{
+            grid-template-areas: 
+        'car car car car'
+        'car-1 car-1 car-1 car-1'
+        'car-2 car-2 car-2 car-2'
+        'car-3 car-3 car-3 car-3'
+        'car-4 car-4 car-4 car-4'
+        'car-5 car-5 car-5 car-5'
+        'car-6 car-6 car-6 car-6'
+        'car-7 car-7 car-7 car-7';
+        }
+        .gallery a{
+            height: 30rem;
+        }
+        .car{
+            min-height: 31rem;
+        }
+        
        
         
     }

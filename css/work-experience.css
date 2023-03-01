@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family:serif 'Times New Roman', Times, serif;
 }
+
 .head{
   position: relative;
   width: 100%;
@@ -91,8 +92,137 @@ a.active,a:hover{
             left: 0;
         }
         
+        
     }
 
 
+}
+body{
+    background-color: black;
+    color: white;
+}
+img{
+    width:100%;
+    
+}
+.description{
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: grey;
+}
+.title{
+    color: orange;
+    font-weight:700 ;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+.item-name{
+    font-size: 1.6rem;
+    color: white;
+    font-weight: 500;
+    margin: 0.8rem 0;
+}
+.item-subtitle{
+    font-size: 1.4rem;
+    color: grey;
+    font-weight: 400;
+}
+.cert-name{
+    font-size: 2rem;
+    color: white;
+    font-weight: 500;
+}
 
+
+.container{
+    max-width: 1000px;
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    padding: 5rem;
+    background: black;
+    grid-template-columns: 1fr 1fr ;
+    gap: 4rem;
+}
+@media only screen and( max-width:768px){
+    .containera{
+        width: 100%;
+        grid-template-columns: 1fr;
+        padding: 3rem;
+        gap: 7rem;
+    }
+}
+.profile{
+    grid-column: 1 / -1 ;
+    margin-bottom: 2rem;
+}
+.profile-container{
+    display:block;
+    gap: 2rem;
+}
+.profile-profileimg{
+max-width: 250px;
+
+}
+.profile-profileimg img{
+    border-radius: 50%;
+}
+.first-name{
+    color: white;
+    font-weight: 200;
+    font-size: clamp(2rem, 8vw, 4rem);
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: -0.8rem;
+}
+.last-name{
+    color: orange;
+    font-weight: 700;
+    font-size: clamp(2.5rem, 15vw, 7rem);
+    text-transform: uppercase;
+    display: block;
+}
+.profile-title{
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.skill-list{
+    margin-top: 1rem;
+    margin-left: 2rem;
+    line-height: 2;
+}
+.edu-item{
+    margin-top: 2rem;
+}
+.certification-item{
+    margin-top: 2rem;
+    font-size: 1.6rem;
+    color: white;
+    font-weight: 500;
+    margin: 0.8rem 0;
+}
+.exp-item{
+margin-top: 2rem;
+font-size: 1.6rem;
+color: white;
+font-weight: 500;
+margin: 0.8rem 0;
+}
+.intrest-items{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.intrest-item{
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    color: grey;
 }
