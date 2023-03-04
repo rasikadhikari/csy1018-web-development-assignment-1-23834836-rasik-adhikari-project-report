@@ -3,6 +3,8 @@
     padding: 0;
     box-sizing: border-box;
     font-family:serif 'Times New Roman', Times, serif;
+    background-color: black;
+    
 }
 .head{
   position: relative;
@@ -22,12 +24,15 @@ nav{
    
     
 }
- 
+ .top{
+    background-color: lightblue;
+ }
 
 nav ul li {
     display: inline-block;
     list-style: none;
     margin: 10px 20px;
+    
    
 }
 nav ul li a {
@@ -35,6 +40,7 @@ nav ul li a {
     color: white;
     font-weight: bold;
     text-transform:uppercase;
+    background-color: lightblue;
 
 
 }
@@ -109,7 +115,7 @@ a.active,a:hover{
 }
 .detel h3{
     font-size:  50px; ;
-    color: black;
+    color: grey;
     margin-bottom: 20px;
 
 }
@@ -121,7 +127,7 @@ span{
     line-height: 20px;
 }
 .detel a{
-    background-color: black;
+    background-color: grey;
     padding: 10px 18px;
     text-decoration: none;
     font-weight: bold;
