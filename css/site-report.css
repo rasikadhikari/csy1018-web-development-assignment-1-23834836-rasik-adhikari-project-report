@@ -21,6 +21,10 @@ nav{
     background-color: lightblue;
 
 }
+.top{
+    background-color: lightblue;
+    font-family: 'Titillium Web', sans-serif;
+ }
 
 nav ul li {
     display: inline-block;

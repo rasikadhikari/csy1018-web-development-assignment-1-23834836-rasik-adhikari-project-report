@@ -3,9 +3,13 @@
     padding: 0;
     box-sizing: border-box;
     font-family:serif 'Times New Roman', Times, serif;
-    background-color: black;
     
 }
+
+.active{
+    color: rgb(255, 140, 0);
+}
+
 .head{
   position: relative;
   width: 100%;
@@ -26,6 +30,7 @@ nav{
 }
  .top{
     background-color: lightblue;
+    font-family: 'Titillium Web', sans-serif;
  }
 
 nav ul li {
@@ -41,6 +46,7 @@ nav ul li a {
     font-weight: bold;
     text-transform:uppercase;
     background-color: lightblue;
+    box-shadow: whitesmoke;
 
 
 }
@@ -49,7 +55,7 @@ nav ul li a:hover{
    
     
 }
-a.active,a:hover{
+a:hover{
     background-color: rgb(123, 159, 171);
     transition: .5s;
 }
@@ -74,13 +80,19 @@ a.active,a:hover{
     nav ul li a {
         font-size: 16px;
     }
+    .top{
+        background-color: gray;
+    }
+    nav ul li a{
+        background-color: grey;
+    }
     @media(max-width:858px) {
         .checkbtn{
             display:block;
         }
         ul{
             position: fixed;
-            width: 100%;
+            width: 27%;
             height: 100vh;
             background: gray;
             top: 80px;
@@ -110,11 +122,11 @@ a.active,a:hover{
 
 }
 .detel{
-    margin-left: 8%;
-    margin-top: 15%;
+    margin-left: 13%;
+    margin-top: 9%;
 }
 .detel h3{
-    font-size:  50px; ;
+    font-size:  100px; ;
     color: grey;
     margin-bottom: 20px;
 
@@ -124,7 +136,7 @@ span{
 }
 .detel p{
     color: gray;
-    line-height: 20px;
+    font-size: 25px;
 }
 .detel a{
     background-color: grey;
@@ -137,33 +149,39 @@ span{
     border-radius: 5px;
    
 }
-.image{
-    width: 30%;
-    height: 40%;
-    position: absolute;
-    bottom: 0;
-    right: 200px;
-    top: 200px;
-    
-    
+
+.pic{
+    margin-left: 1400px;
 }
-.image{
-    border: 5px solid;
-    height: 500px;
-    width: 300px;
-    background-image: url(./shape.jfif);
-    background-repeat: no-repeat;
-    background-size: cover;
-    
-}
-.image img {
-    height: 50%;
-    position:absolute;
-    left: 0%;
-    bottom: 0;
-    transform:translate(-10%);
-    transition:bottom 1s, top 1s
+.pic a{
+    text-decoration: none;
 }
 
+.pic-icon{
+    margin-bottom: 3px;
+}
 
+.pic-but{
+    text-decoration: none;
+}
 
+.pic-icon:hover{
+    height: 65px;
+}
+@media only screen and (max-width: 991px){
+    .detel h3{
+        font-size:  50px; ;
+        color: grey;
+        margin-bottom: 20px;
+    
+}
+.detel{
+    margin-left: 5%;
+    margin-top: 9%;
+}
+.pic-icon{
+position: relative;
+left: 0%;
+margin: 3px;
+}
+}

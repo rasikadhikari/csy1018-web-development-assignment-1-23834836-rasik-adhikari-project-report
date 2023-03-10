@@ -22,6 +22,10 @@ nav{
     background-color: lightblue;
     
 }
+.top{
+    background-color: lightblue;
+    font-family: 'Titillium Web', sans-serif;
+ }
 
 nav ul li {
     display: inline-block;
@@ -56,6 +60,7 @@ a.active,a:hover{
 #check{
     display: none;
 }
+
 @media(max-width: 952px){
     label.logo{
         border-image-width: auto;
@@ -77,6 +82,7 @@ a.active,a:hover{
             left:-100%;
             text-align:center;
             transition: .5s;
+            z-index:-2;
         } 
         nav ul li{
             display: block;
@@ -123,7 +129,7 @@ a.active,a:hover{
     color: gray;
 }
 .contact .cont p{
-    font-weight: 400;
+    font-weight: 500;
     
 }
 .container{
@@ -166,8 +172,8 @@ flex-direction: column;
     font-weight: 500;
 }
 .contact-form{
-    width: 40%;
-    padding: 40px;
+    width: 60%;
+    padding: 70px;
     background:lightslategray;
     
 
@@ -224,4 +230,31 @@ flex-direction: column;
     padding: 10px;
     font-size: 18px;
 }
+@media only screen and (max-width: 991px){
+.contact{
+    padding: 50px;
+}
+.container{
+    flex-direction: column;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-right: 50px;
+}
+.container .contactinfo{
+    margin-bottom: 40px;
+}
+.contact-form{
+    width: 100%;
+}
+.container .contactinfo .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+    margin-right: 30px;
+}
+}
+
 
