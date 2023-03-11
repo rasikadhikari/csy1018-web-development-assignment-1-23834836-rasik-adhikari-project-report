@@ -72,6 +72,7 @@ a:hover{
 #check{
     display: none;
 }
+/* for mobile */
 @media(max-width: 952px){
     label.logo{
         border-image-width: auto;
@@ -149,7 +150,7 @@ span{
     border-radius: 5px;
    
 }
-
+/* image specification */
 .pic{
     margin-left: 1400px;
 }
@@ -168,6 +169,7 @@ span{
 .pic-icon:hover{
     height: 65px;
 }
+/* mobile format display */
 @media only screen and (max-width: 991px){
     .detel h3{
         font-size:  50px; ;

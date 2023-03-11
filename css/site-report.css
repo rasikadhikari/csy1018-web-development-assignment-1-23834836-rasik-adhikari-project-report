@@ -38,6 +38,7 @@ nav ul li a {
     text-transform:uppercase;
     background-color: lightblue;
     box-shadow: whitesmoke;
+    font-family: 'Titillium Web', sans-serif;
 
 }
 nav ul li a:hover{
@@ -106,7 +107,7 @@ a.active,a:hover{
     }
 
 
-
+ /* font display */
 }
 h1{
    

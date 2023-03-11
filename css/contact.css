@@ -37,11 +37,7 @@ nav ul li a {
     color: white;
     font-weight: bold;
     text-transform:uppercase;
-    background-color: lightblue;
-    box-shadow: whitesmoke;
-
-
-}
+  }
 nav ul li a:hover{
     color: gold;
 }
@@ -107,10 +103,8 @@ a.active,a:hover{
         }
         
     }
-
-
-
 }
+/* head format */
 .contact{
     position: relative;
     min-height: 100vh;
@@ -129,6 +123,7 @@ a.active,a:hover{
     text-align: center;
 
 }
+/* heading format */
 .contact .cont h3{
     font-size: 36px;
     font-weight: 500;
@@ -138,6 +133,7 @@ a.active,a:hover{
     font-weight: 500;
     
 }
+/* icon box */
 .container{
     width: 100%;
     display: flex;
@@ -177,6 +173,7 @@ flex-direction: column;
     color: gold;
     font-weight: 500;
 }
+/* contact box */
 .contact-form{
     width: 60%;
     padding: 70px;
@@ -198,6 +195,7 @@ flex-direction: column;
    width: 100%; 
    margin-top: 10px;
 }
+/* Name */
 .contact-form .formbox input,
 .contact-form .formbox textarea
 {
@@ -220,6 +218,7 @@ flex-direction: column;
     transition: 0.5s;
     color: gray;
 }
+/* Email */
 .contact-form .formbox input:focus ~ span,
 .contact-form .formbox input:valid ~ span,
 .contact-form .formbox textarea:focus ~ span,
@@ -239,6 +238,7 @@ flex-direction: column;
     padding: 10px;
     font-size: 18px;
 }
+/* for mobile display */
 @media only screen and (max-width: 991px){
 .contact{
     padding: 50px;

@@ -59,6 +59,7 @@ a.active,a:hover{
 #check{
     display: none;
 }
+/*for mobile  */
 @media screen and (max-width: 952px){
     label.logo{
         border-image-width: auto;
@@ -109,23 +110,9 @@ a.active,a:hover{
         #check:checked~ul{
             left: 0;
         }
-        .gallery{
-            grid-template-areas: 
-        'car car car car'
-        'car-1 car-1 car-1 car-1'
-        'car-2 car-2 car-2 car-2'
-        'car-3 car-3 car-3 car-3'
-        'car-4 car-4 car-4 car-4'
-        'car-5 car-5 car-5 car-5'
-        'car-6 car-6 car-6 car-6'
-        'car-7 car-7 car-7 car-7';
-        }
-       
-        
-       
-        
+      
     }
-
+        /* image placement */
     .container{
         width: 100%;
         max-width: 120rem;
@@ -198,6 +185,7 @@ a.active,a:hover{
                     grid-area: car-7 ;
                     background-image: url(/image/car-7.jfif);
                 }
+                /* image display format */
                 @media only screen and (max-width: 991px){
                     .gallery{
                         display: flex;
