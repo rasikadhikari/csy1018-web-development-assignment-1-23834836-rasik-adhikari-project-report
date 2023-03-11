@@ -34,9 +34,11 @@ nav ul li {
 }
 nav ul li a {
     text-decoration: none;
-    color: black;
+    color: white;
     font-weight: bold;
-    text-transform: uppercase;
+    text-transform:uppercase;
+    background-color: lightblue;
+    box-shadow: whitesmoke;
 
 
 }
@@ -69,6 +71,9 @@ a.active,a:hover{
     nav ul li a {
         font-size: 16px;
     }
+    .top{
+        background-color: gray;
+    }
     @media(max-width:858px) {
         .checkbtn{
             display:block;
@@ -91,6 +96,7 @@ a.active,a:hover{
         }  
         nav ul li a{
             font-size: 20px;
+            background-color: grey;
         }
         a.active,a:hover{
             background: none;
@@ -180,8 +186,11 @@ flex-direction: column;
 }
 .contact-form h2{
     font-size: 30px;
-    color: black;
-    font-weight: 500;
+    color: white;
+    
+    justify-content: center;
+    display: flex;
+    font-weight: bold;
 
 }
 .contact-form .formbox{

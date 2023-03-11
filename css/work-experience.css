@@ -35,6 +35,9 @@ nav ul li a {
     text-decoration: none;
     color: white;
     font-weight: bold;
+    text-transform:uppercase;
+    background-color: lightblue;
+    box-shadow: whitesmoke;
 
 
 }
@@ -65,6 +68,10 @@ a.active,a:hover{
     }
     nav ul li a {
         font-size: 16px;
+        background-color: grey;
+    }
+    .top{
+        background-color: gray;
     }
     @media(max-width:858px) {
         .checkbtn{
@@ -87,6 +94,7 @@ a.active,a:hover{
         }  
         nav ul li a{
             font-size: 20px;
+            background-color: grey;
         }
         a.active,a:hover{
             background: none;

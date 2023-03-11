@@ -32,9 +32,11 @@ nav ul li {
 }
 nav ul li a {
     text-decoration: none;
-    color: black;
+    color: white;
     font-weight: bold;
-
+    text-transform:uppercase;
+    background-color: lightblue;
+    box-shadow: whitesmoke;
 
 }
 nav ul li a:hover{
@@ -64,14 +66,10 @@ a.active,a:hover{
     }
     nav ul li a {
         font-size: 16px;
+        background-color: grey;
     }
     }
-    .gallery a{
-        height: 20rem;
-    }
-    .car{
-        min-height: 41rem;
-    }
+   
 
    
     
@@ -92,6 +90,9 @@ a.active,a:hover{
             background: grey;
            
         } 
+        .top{
+            background-color: gray;
+        }
         nav ul li{
             display: block;
             margin: 50px 0;
@@ -99,6 +100,7 @@ a.active,a:hover{
         }  
         nav ul li a{
             font-size: 20px;
+            background-color: grey;
         }
         a.active,a:hover{
             background: none;
@@ -118,12 +120,7 @@ a.active,a:hover{
         'car-6 car-6 car-6 car-6'
         'car-7 car-7 car-7 car-7';
         }
-        .gallery a{
-            height: 30rem;
-        }
-        .car{
-            min-height: 31rem;
-        }
+       
         
        
         
@@ -200,4 +197,10 @@ a.active,a:hover{
                 .car-7{
                     grid-area: car-7 ;
                     background-image: url(/image/car-7.jfif);
+                }
+                @media only screen and (max-width: 991px){
+                    .gallery{
+                        display: flex;
+                        flex-direction: column;
+                    }
                 }
