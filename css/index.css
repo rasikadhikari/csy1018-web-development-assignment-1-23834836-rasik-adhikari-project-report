@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:serif 'Times New Roman', Times, serif;
+
     
 }
 
@@ -46,7 +46,7 @@ nav ul li a {
     font-weight: bold;
     text-transform:uppercase;
     background-color: lightblue;
-    box-shadow: whitesmoke;
+    
 
 
 }
@@ -93,7 +93,7 @@ a:hover{
         }
         ul{
             position: fixed;
-            width: 27%;
+            width: 100%;
             height: 100vh;
             background: gray;
             top: 80px;
@@ -134,13 +134,14 @@ a:hover{
 }
 span{
     color: orange;
+
 }
 .detel p{
     color: gray;
     font-size: 25px;
 }
 .detel a{
-    background-color: grey;
+    background-color:lightblue;
     padding: 10px 18px;
     text-decoration: none;
     font-weight: bold;
@@ -148,11 +149,20 @@ span{
     display: inline-block;
     margin: 30px 0;
     border-radius: 5px;
+    animation-name: example;
+    animation-duration: 4s ;
    
-}
+  }
+  /* change of colour in button */
+  @keyframes example {
+    from {background-color: lightblue;}
+    to {background-color: grey;}
+  }
+
 /* image specification */
 .pic{
-    margin-left: 1400px;
+    margin-left: 1700px;
+    margin-top: 50px;
 }
 .pic a{
     text-decoration: none;
@@ -160,8 +170,16 @@ span{
 
 .pic-icon{
     margin-bottom: 3px;
+    margin-left: 3px;
+    margin-top: 3px;
+    animation: rotate 5s linear infinite;
 }
-
+/* spinning of icons */
+@keyframes rotate{
+    to{
+        transform: rotate(360deg);
+    }
+}
 .pic-but{
     text-decoration: none;
 }
@@ -181,9 +199,16 @@ span{
     margin-left: 5%;
     margin-top: 9%;
 }
+.detel p{
+    color: gray;
+    font-size: 15px;
+   box-sizing: inherit;
+}
+.pic{
+margin-left: 300px;
+}
+
 .pic-icon{
-position: relative;
-left: 0%;
-margin: 3px;
+    height:35px;
 }
 }

@@ -1,14 +1,12 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family:serif 'Times New Roman', Times, serif;
+   
     
 }
 .head{
   position: relative;
   width: 100%;
-  height: 100vh;
   background-color: white;  
 }
 nav{
@@ -69,6 +67,8 @@ a.active,a:hover{
     }
     .top{
         background-color: gray;
+        position: absolute;
+        z-index: 1;
     }
     @media(max-width:858px) {
         .checkbtn{
@@ -83,7 +83,7 @@ a.active,a:hover{
             left:-100%;
             text-align:center;
             transition: .5s;
-            z-index:-2;
+          
         } 
         nav ul li{
             display: block;
@@ -113,9 +113,7 @@ a.active,a:hover{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: url(/image/build.jfif);
-    background-size: cover;
-   
+    
     
 }
 .contact .cont{
@@ -240,6 +238,8 @@ flex-direction: column;
 }
 /* for mobile display */
 @media only screen and (max-width: 991px){
+  
+
 .contact{
     padding: 50px;
 }
@@ -263,6 +263,18 @@ flex-direction: column;
     padding: 20px 0;
     display: flex;
     margin-right: 30px;
+}
+.contact{
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    padding: 50px 100px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    
+    
 }
 }
 
