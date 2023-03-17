@@ -67,7 +67,7 @@ a.active,a:hover{
     }
     .top{
         background-color: gray;
-        position: absolute;
+        
         z-index: 1;
     }
     @media(max-width:858px) {
@@ -207,14 +207,14 @@ flex-direction: column;
     resize: none;
 }
 .contact-form .formbox span{
-    position: absolute;
+   
     left: 0;
     padding: 5px 0;
     font-size: 16px;
     margin: 10px 0;
     pointer-events: none;
     transition: 0.5s;
-    color: gray;
+    color: white;
 }
 /* Email */
 .contact-form .formbox input:focus ~ span,
