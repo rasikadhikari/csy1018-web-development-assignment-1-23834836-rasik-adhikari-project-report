@@ -122,3 +122,75 @@ h1{
     color: grey;
     align-items: center;
 }
+.description-1{
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: grey;
+    align-items: center;
+}
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; 
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.column h2{
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color:white;
+}
+.column p{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+    text-decoration: none;
+}
+.column a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    text-transform:uppercase;
+}
+.description a{
+    text-decoration: none;
+    color: silver;
+    
+}
+.reference{
+    display:flex;
+   justify-content: center;
+}
+.image-ref{
+    display:flex;
+    justify-content: center;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: grey;
+    align-items: center;
+}
+@media only screen and (max-width: 991px){
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: none;
+        
+    }
+    .column {
+        float: left;
+        width: 50%;
+        padding: 10px;
+        height: 300px; 
+      }
+}
+
